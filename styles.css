@@ -327,7 +327,7 @@ body{
         position: fixed;
         width: 85vw;
         overflow: hidden;
-        top: 71.1px;
+        top: 4.4375rem;
         left: -100%;
         background-color: rgb(0, 0, 0, .7);
         transition: all .3s ease;
@@ -390,11 +390,12 @@ body{
         width: 100%;
         padding: 1rem 1rem;
         position: fixed;
+        height: 71px;
         top: 0;
         left: 0;
         display: flex;
         justify-content: space-between;
-        background-color: green;
+        background-color: rgb(0, 0, 0, .7);
     }
 
     .section1{
