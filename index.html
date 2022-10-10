@@ -19,7 +19,7 @@
         <div class="web-logo">AJIDEX</div>
 
 
-        <div class="ham" onclick="hammer()"><i class="fa fa-bars"></i></div>
+        <div id="hammer" class="ham" onclick="hammer()"><i onclick="changeIcon(this)" class="fa fa-bars" id="ham"></i></div>
 
         <div class="nav-link" id="naver">
             <ul>
@@ -112,6 +112,17 @@
 
         function hammer(){
             naver.classList.toggle("openmenu");
+        }
+    </script>
+
+    <script>
+        function changeIcon() {
+            const element = document.getElementById("ham");
+            if (element.className == "fa fa-bars") {
+                element.className = "fa fa-times";
+            } else {
+                element.className = "fa fa-bars";
+            }
         }
     </script>
 
