@@ -19,12 +19,9 @@
         <div class="web-logo">AJIDEX</div>
 
 
-        <input type="checkbox" name="menu" id="clicked">
-        <label for="clicked" class="menu-btn">
-            <i class="fa fa-bars"></i>
-        </label>
+        <div class="ham" onclick="hammer()"><i class="fa fa-bars"></i></div>
 
-        <div class="nav-link">
+        <div class="nav-link" id="naver">
             <ul>
                 <li><a href="#">Articles</a></li>
                 <li><a href="#">Chats</a></li>
@@ -109,6 +106,14 @@
             </div>
         </scetion>
     </div>
+
+    <script>
+        let naver = document.getElementById("naver");
+
+        function hammer(){
+            naver.classList.toggle("openmenu");
+        }
+    </script>
 
 </body>
 
