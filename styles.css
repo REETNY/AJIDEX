@@ -502,6 +502,10 @@ body{
         display: flex;
     }
 
+    .fa-times{
+        color: rgb(187, 16, 16);
+    }
+
     
 
     .section2{

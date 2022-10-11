@@ -112,6 +112,13 @@
 
         function hammer(){
             naver.classList.toggle("openmenu");
+
+            document.getElementById("ham").style.color = "white";
+            
+            const collection = document.getElementsByClassName("fa-times");
+            for (let i = 0; i < collection.length; i++) {
+            collection[i].style.color = "red";
+            }
         }
     </script>
 
